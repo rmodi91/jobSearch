@@ -1,0 +1,13 @@
+python-jobspy==1.1.82
+anthropic>=0.34.0
+gspread>=6.0.0
+google-auth>=2.23.0
+google-api-python-client>=2.100.0
+playwright>=1.40.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+schedule>=1.2.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+click>=8.1.7
+pandas>=2.1.0

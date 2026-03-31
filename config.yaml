@@ -1,0 +1,57 @@
+search:
+  titles:
+    - "Senior Product Manager"
+    - "Principal Product Manager"
+    - "Director of Product"
+    - "Head of Product"
+  keywords:
+    - "B2B SaaS"
+    - "platform"
+    - "API"
+    - "developer tools"
+    - "fintech"
+  locations:
+    - "Germany"
+    - "Berlin"
+    - "Germany Remote"
+  job_type: "fulltime"
+  is_remote: true
+  hours_old: 400
+  results_per_site: 25
+
+linkedin:
+  enabled: true
+  fetch_description: true  # set to false for faster runs; true needed for CV tailoring quality
+
+trueup:
+  enabled: true
+  base_url: "https://trueup.io/product"
+  max_pages: 5
+  filters:
+    remote: true
+
+company_sites:
+  enabled: true
+  sites: []  # Add company career page URLs here. Example:
+  # sites:
+  #   - name: "Stripe"
+  #     url: "https://stripe.com/jobs/search"
+  #     scrape_method: "playwright"        # playwright | requests
+  #     job_link_selector: "a.job-link"
+  #     title_selector: ".job-title"
+  #     location_selector: ".job-location"
+  #     next_page_selector: null           # null = single page
+
+scheduling:
+  run_at: "08:00"  # 24h format, local time
+
+cv_tailoring:
+  model: "gemini-2.0-flash"
+  max_tokens: 4096
+  min_match_score: 5   # only create tailored CV for jobs scoring >= this (1-10)
+  enabled: true
+
+rate_limiting:
+  delay_between_requests: 2.5    # seconds between HTTP requests within a scraper
+  delay_between_sites: 5.0       # seconds between different scrapers/sites
+  playwright_slow_mo: 500        # ms delay between Playwright actions
